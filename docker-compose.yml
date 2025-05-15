@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  mongo-moderation:
+    image: mongo
+    ports:
+      - "27017:27017"
+
+  mongo-content:
+    image: mongo
+    ports:
+      - "27018:27017"

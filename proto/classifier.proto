@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package classifier;
+
+service Classifier {
+  rpc Classify (TextRequest) returns (CategoryResponse);
+}
+
+message TextRequest {
+  string text = 1;
+}
+
+message CategoryResponse {
+  string category = 1;
+}
