@@ -48,7 +48,7 @@ cd classification-service && node index.js
 cd moderation-service && node index.js
 cd content-service && node index.js
 cd api-gateway && node index.js
-
+```
 
 🧪 Test Example
 POST a message (REST)
