@@ -51,29 +51,37 @@ cd api-gateway && node index.js
 ```
 
 🧪 Test Example
+
 POST a message (REST)
 
 POST http://localhost:4000/submit
+```bash
 Content-Type: application/json
 
 {
   "content": "you are so dumb!"
 }
+```
 
 
 Query messages (GraphQL)
+
+```bash
 query {
   messages {
     content
     classification
   }
 }
+```
 
 
 📦 Future Improvements
+
 Replace word list with an AI-powered classification model
 
 Add user authentication
+
 
 📄 License
 MIT
